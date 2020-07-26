@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* панель навигации */
+
+/* Добавьте черный цвет фона в верхнюю панель навигации. */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    margin-top: 26px;
+    padding-right: 186px;
+    z-index: 1;
+    height: 71px;
+
+}
+
+/* Стиль ссылок внутри панели навигации */
+.topnav a {
+    float: right;
+    display: block;
+    padding: 14px 21px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    margin-top: 1px;
+
+}
+
+
+/* Изменить цвет ссылок при наведении */
+.topnav a:hover {
+    color: #fed136;
+}
+
+/* Добавьте активный класс, чтобы выделить текущую страницу */
+.topnav a.active {
+    background-color: #fed136;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Скройте ссылку, которая должна открывать и закрывать topnav на маленьких экранах */
+.topnav .icon {
+    display: none;
+}
+
+
+nav .logo {
+    float: left;
+    margin-left: 28%;
+    margin-top: 3px;
+}
+
+/* Если ширина экрана меньше 600 пикселей, скрыть все ссылки, кроме первой («Home»). Показать ссылку, которая должна открывать и закрывать topnav (.icon) */
+@media screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+
+    }
+}
+
+/* Класс «responsive» добавляется в topnav с помощью JavaScript, когда пользователь нажимает на иконку. Этот класс заставляет topnav хорошо выглядеть на маленьких экранах (отображать ссылки вертикально, а не горизонтально) */
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+        background: #3b393a !important;
+        height: 100%;
+        margin: 0 !important;
+        z-index: 1;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav {
+        padding-right: 0px;
+    }
+
+    .topnav.responsive a.logo {
+        display: none;
+    }
+}
+
+
+
+header {
+    height: auto;
+    position: relative;
+    display: flex;
+    padding-top: 215px;
+    padding-bottom: 160px;;
+    background: url(img/first-bg.jpg) no-repeat center top / cover;
+}
+
+
+header nav {}
+
+header .header-body {
+    width: 920px;
+    margin: auto;
+    text-align: center;
+}
+
+header .header-title {
+    margin-top: 57px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+header .header-subtitle {
+    margin-top: 29px;
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1.7px;
+}
+
+header .header-btn {
+    width: 240px;
+    height: 65px;
+    background-color: #fed136;
+    margin-top: 43px;
+    border-radius: 5px;
+    border-color: #fed136;
+    color: #484543;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#services {}
+
+#services .services {
+    padding-top: 113px;
+    background: #ffffff;
+    height: auto;
+    padding-bottom: 115px;
+}
+
+#services .services__title {}
+
+.section-title {
+    text-align: center;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #777777;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#services .services__body {
+    display: flex;
+    width: 920px;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#services .services__column {
+    width: 262px;
+    margin-top: 77px;
+}
+
+#services .inner-services {}
+
+#services .inner-services__icon {}
+
+#services img {}
+
+#services .inner-services__title {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 18px 19px 8px 10px;
+    letter-spacing: -0.45px;
+}
+
+#services .inner-services__text {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+}
+
+#portfolio {
+
+   
+}
+
+
+#portfolio .portfolio {
+padding-top: 113px;
+padding-bottom: 133px;
+background: #f7f7f7;
+}
+
+#portfolio .portfolio__title {
+    
+}
+
+#portfolio .section-subtitle {}
+
+#portfolio .portfolio__body {
+    display: flex;
+    width: 941px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#portfolio .box-portfolio {
+    width: 291px;
+    height: 301px;
+    margin-top: 76px;
+}
+
+#portfolio img {}
+
+#about {}
+
+#about .about {
+padding-top: 122px;
+padding-bottom: 1px;
+background: #ffffff;
+}
+#about .about__title {
+    margin-left: 5px;
+}
+
+#about .section-title {
+
+}
+#about .section-subtitle {}
+
+#about .about__body {
+    margin: 0 auto;
+    width: 840px;
+    margin-top: 75px
+}
+
+#about .about-row:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+#about .about-row:nth-of-type(even) .about-row__text {
+    text-align: left;
+}
+
+#about .about-row {
+    display: flex;
+    justify-content: center;
+/*    margin-bottom: 88px;*/
+}
+
+#about .about-row__text {
+    text-align: right;
+    margin-bottom: 88px;
+}
+
+#about .about-row__text img {}
+
+#about .about-row__data {
+    margin-top: 5px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+    text-transform: uppercase;
+}
+
+#about .about-row__title {
+    margin-top: 5px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+}
+
+#about .about-row__description {
+    margin-top: 11px;
+    width: 285px;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.35px;
+}
+
+#about .about-row__img {
+    width: 183px;
+    height: 183px;
+    margin: 0 42px;
+    margin-bottom: 88px;
+}
+
+#about .about-row__img img {}
+
+#about .about-row__stealth {
+    width: 285px;
+}
+
+footer {
+    display: flex;
+    height: 151px;
+    background: #ffffff;
+    
+}
+
+footer .copyright {
+    margin: 60px auto 112px auto;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.35px;
+}
+
+/* Экстра маленькие устройства (телефоны, 600px и ниже) */
+@media only screen and (max-width: 600px) {...}
+
+
+
+
+
+/* Большие устройства (ноутбуки / десктопы, 992px и ниже) */
+@media only screen and (max-width: 992px) {
+       .topnav {
+        padding-right: 0px;
+    }
+nav .logo {
+
+    margin-left: 7%;
+
+}
+    
+    #services .services__body {
+       width: 80%;
+    flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+    #portfolio .portfolio__body {
+    display: flex;
+    width: 680px;
+    flex-wrap: wrap;
+}
+
+    #about .about__body {
+    width: 580px;
+}
+    #about .about-row__stealth {
+    display: none;
+}
+    #about .about-row__img {
+    margin: 0 73px;
+    margin-bottom: 88px;
+}
+}
+
+
+/* Средние устройства (альбомные планшеты, 768px и ниже) */
+@media only screen and (max-width: 768px) {
+
+    #portfolio .portfolio__body {
+    display: flex;
+    width: 291px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+}
+
+/* Маленькие устройства (портретные планшеты и большие телефоны, 600px и ниже) */
+@media only screen and (max-width: 600px) {
+        #about .about__body {
+    width: 375px;
+}
+#about .about-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+    #about .about-row__img {
+    margin: 0 73px;
+    margin-bottom: 44px;
+
+    }
+    
+    #about .about-row:nth-of-type(n) .about-row__text {
+    text-align: center;
+}
+    
+
+    
+    
+}
+
